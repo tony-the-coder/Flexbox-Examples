@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  background-color: #f4f4f4;
+  display: flex;
+  /* flex-direction: row; */
+
+  /* X-axis is the main axis, Y-axis is the cross axis. When set to flex-direction: row*/
+  /* align items aligns items on the cross access. */
+
+  /*moves items to the center */
+
+  /* align-items: center;*/
+
+  /* align-items:start to the top of the container, this is also the default behavior*/
+  /* align-items: start; */
+  /* Align items flex-end moves items to the bottom of the container */
+
+  /* When flex-direction: column; is set the main acis and cross action switch. */
+  /* So, this would be a cross axis alignment. */
+  flex-direction: row;
+  align-items: center;
+
+  /* To stretch all of the items to fit the height use align-items: stretch */
+
+  /* align-items: stretch; */
+  /* justify-items: is the main axis alignment */
+  justify-content: center;
+  /* justify-content: flex-start; puts the items at the start of the container */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; puts the items at the end of the container */
+  /* justify-content: flex-end; */
+  /* justify-content: space-around; takes the remaining space and distributes it around the items */
+
+  /* justify-content: space-between; removes space on the ends */
+  /* justify-content: space-between; */
+  height: 70vh;
+}
+
+.item {
+  background: #f4f4f4;
+  border: #ccc solid 2px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  /* width: 200px; */
+  /* flex: 1 0 200px; */
+  /* flex: 1; */
+}
+
+.item-1 {
+  /* It is possible to align an individual item using align-self: and position you want it in. */
+  align-self: flex-start;
+}
+.item-2 {
+  /* flex: 2; */
+}
+
+.item-3 {
+  align-self: flex-end;
+}

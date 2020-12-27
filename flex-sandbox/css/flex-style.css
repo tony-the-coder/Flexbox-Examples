@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.item {
+  background: #f4f4f4;
+  border: #ccc solid 2px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  /* width: 200px; */
+  /* flex: 1 0 200px; */
+  flex: 1;
+}
+
+.flex-container {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+}
+/* If you do not want the flex item to shrink when the page resizes, set the item being resized to flex-shrink: 0 */
+/* .item-1 {
+    flex-shrink: 0;
+  } */
+/* To get an item, like a div, to fill up the remaining open space add flex-grow: 1 (this number can be set in order of presidence. */
+/* .item-2 {
+    flex-grow: 1;
+    flex-basis: 0;
+  } */
+/* flex-grow sets the item to twice the size of flex-grow: 1; The size may not be exactly twice the size on smaller screens if a width has already been set. This is why you would use flex-basis:0 as above. To use all three at the same time and take up all of the same width use flex: 1. flex: can take up to three properties: grow, shrink, basis. */
+/* .item-3 {
+    flex-grow: 2;
+  } */
